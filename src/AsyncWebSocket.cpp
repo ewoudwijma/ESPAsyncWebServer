@@ -1230,6 +1230,10 @@ void AsyncWebSocket::_cleanBuffers()
   }
 }
 
+//added by ewowi
+AsyncWebSocket::AsyncWebSocketClientLinkedList AsyncWebSocket::getClients() const {
+  return _clients;
+}
 
 /*
  * Response to Web Socket request - sends the authorization and detaches the TCP Client from the web server
