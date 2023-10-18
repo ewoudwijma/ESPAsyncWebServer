@@ -331,6 +331,7 @@ class AsyncWebSocket: public AsyncWebHandler {
 
     //added by ewowi
     AsyncWebSocketClientLinkedList getClients() const;
+};
 
 //WebServer response to authenticate the socket and detach the tcp client from the web server request
 class AsyncWebSocketResponse: public AsyncWebServerResponse {
