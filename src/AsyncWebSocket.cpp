@@ -1212,11 +1212,6 @@ AsyncWebSocket::AsyncWebSocketClientLinkedList AsyncWebSocket::getClients() cons
   return _clients;
 }
 
-//added by ewowi
-AsyncWebSocket::AsyncWebSocketClientLinkedList AsyncWebSocket::getClients() const {
-  return _clients;
-}
-
 /*
  * Response to Web Socket request - sends the authorization and detaches the TCP Client from the web server
  * Authentication code from https://github.com/Links2004/arduinoWebSockets/blob/master/src/WebSockets.cpp#L480
